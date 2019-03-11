@@ -39,7 +39,6 @@ class MonTableauBitCoin extends Component {
 
     return (
       <Table>
-        //Adding a comment
         <Table.Header >
           <Table.ColHeader className="table-text-color">Monnaie</Table.ColHeader>
           <Table.ColHeader className="table-text-color">Achat</Table.ColHeader>
