@@ -42,7 +42,7 @@ class MonTableauBitCoin extends Component {
         <Table.Header >
           <Table.ColHeader className="table-text-color">Monnaie</Table.ColHeader>
           <Table.ColHeader className="table-text-color">Achat</Table.ColHeader>
-          <Table.ColHeader className="table-text-color">Vente</Table.ColHeader>
+          <Table.ColHeader className="table-teTxt-color">Vente</Table.ColHeader>
         </Table.Header>
         <Table.Body>
           {dataMapping}
