@@ -13,7 +13,9 @@ class MyNavBarWithSignOut extends Component {
           <Navbar.Text className="navbar-text">
           {/*Affichage du nom de l'utilisateut connécté Via les props, sinon affichage du texte: Connectez vous*/}
           {this.props.onLineUser}
-          <Button color="danger" onClick={this.props.signOut} >Sign Out !</Button>
+          <Button color="danger" onClick={this.props.signOut} style={marginLeft: "5px"}>
+          Sign Out !
+          </Button>
           </Navbar.Text>
         </Navbar.Collapse>
       </Navbar>
