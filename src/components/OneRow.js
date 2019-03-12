@@ -6,7 +6,7 @@ class OneRow extends Component {
 
     render(){
       return(
-        <Table.Row className="table-text-color">
+        <Table.Row>
           <Table.Col>{this.props.currency}</Table.Col>
           <Table.Col>{this.props.buy}</Table.Col>
           <Table.Col>{this.props.sell}</Table.Col>

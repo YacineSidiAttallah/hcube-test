@@ -12,13 +12,17 @@ class CoursBitCoinPage extends Component {
     return (
       <div>
         <MyNavBar onLineUser={this.props.currentUser}/>
-      <div style={customStyle}>
-        <Grid.Row>
-          <Grid.Col>
-            <MonTableauBitCoin />
-          </Grid.Col>
-        </Grid.Row>
-          <Button color="danger" onClick={this.props.signOut} >Sign Out !</Button>
+        <div style={customStyle}>
+          <Grid.Row>
+              <Grid.Col>
+                    <MonTableauBitCoin />
+              </Grid.Col>
+          </Grid.Row>
+          <Grid.Row >
+              <Grid.Col>
+                    <Button color="danger" onClick={this.props.signOut} >Sign Out !</Button>
+              </Grid.Col>
+          </Grid.Row>
         </div>
       </div>
     );
@@ -26,7 +30,7 @@ class CoursBitCoinPage extends Component {
 }
 
 const customStyle={
-  margin:"0% 15%",
+  margin:"1% 15%",
   textAlign: "center"
 }
 
