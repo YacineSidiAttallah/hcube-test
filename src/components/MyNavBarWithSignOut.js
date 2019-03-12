@@ -10,11 +10,11 @@ class MyNavBarWithSignOut extends Component {
         Hcube Technical Test - Cours de du bitcoin ! </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
-          <Navbar.Text className="navbar-text" >
+          <Navbar.Text className="navbar-text"  style={{marginRight: "10px"}}>
           {/*Affichage du nom de l'utilisateut connécté Via les props, sinon affichage du texte: Connectez vous*/}
           {this.props.onLineUser}
           </Navbar.Text>
-          <Button color="danger" onClick={this.props.signOut} style={{marginLeft: "5px"}}>
+          <Button color="danger" onClick={this.props.signOut}>
           Sign Out !
           </Button>
         </Navbar.Collapse>
