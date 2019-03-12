@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-
+/*Classe qui gènére un Bouton Google Authentificaton*/
 class GoogleButton extends Component {
 
   render() {

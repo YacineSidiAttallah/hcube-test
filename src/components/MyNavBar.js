@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from 'react-bootstrap/Navbar'
 
+/*Classe qui gènére le menu de navigation*/
 class MyNavBar extends Component {
   render() {
     return (
@@ -10,6 +11,7 @@ class MyNavBar extends Component {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
           <Navbar.Text className="navbar-text">
+          {/*Affichage du nom de l'utilisateut connécté Via les props, sinon affichage du texte: Connectez vous*/}
           {this.props.onLineUser}
           </Navbar.Text>
         </Navbar.Collapse>

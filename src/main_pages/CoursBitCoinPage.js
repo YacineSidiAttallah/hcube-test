@@ -5,7 +5,7 @@ import MonTableauBitCoin from '../components/MonTableauBitCoin'
 import MyNavBar from '../components/MyNavBar'
 
 
-
+/*Page principale une fois l'utilisateur connécté*/
 class CoursBitCoinPage extends Component {
 
   render() {

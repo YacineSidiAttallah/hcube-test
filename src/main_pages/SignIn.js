@@ -3,6 +3,8 @@ import GoogleButton from '../components/GoogleButton';
 import MyNavBar from '../components/MyNavBar'
 import "tabler-react/dist/Tabler.css";
 import {Grid} from 'tabler-react';
+
+/*Page principale si l'utilisateur est hors ligne*/
 class SignIn extends Component {
 
   render() {

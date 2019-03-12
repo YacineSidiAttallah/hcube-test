@@ -3,6 +3,7 @@ import {Card, Table} from 'tabler-react';
 import "tabler-react/dist/Tabler.css";
 import OneRow from './OneRow'
 
+/*Classe prinicpale pour l'import des data et leur affichage*/
 class MonTableauBitCoin extends Component {
 
   constructor(){
@@ -13,6 +14,7 @@ class MonTableauBitCoin extends Component {
 
   }
 
+  /* Import de l'API */
   componentDidMount(){
     fetch('https://blockchain.info/fr/ticker')
     .then(data => data.json())
@@ -26,17 +28,9 @@ class MonTableauBitCoin extends Component {
 
 
   render() {
-    /*
-    const dataMapping = Object.entries(this.state.stateData).map(([currency, info]) =>{
-        return(
-          <OneRow
-            currency={currency["0"]}
-            buy={info.buy}
-            sell={info.sell}
-          />
-      )
-  })
-  */
+
+  /* Mapping des données et affichage de chaque élément dans un composant OneRow */
+  /* Affichage des dix premiers éléments de l'objet json */
   const dataMapping = Object.entries(this.state.stateData)
   .map((item, index, array) => {
     if(index<10){
@@ -62,6 +56,7 @@ class MonTableauBitCoin extends Component {
                 <Table.ColHeader>Vente</Table.ColHeader>
             </Table.Header>
             <Table.Body>
+            {/* Affichange des data dans des composant OneRow */}
                 {dataMapping}
             </Table.Body>
         </Table>

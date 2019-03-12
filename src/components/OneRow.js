@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Table} from 'tabler-react';
 import "tabler-react/dist/Tabler.css";
 
+/*Classe qui affiche un élément de l'API dans une ligne*/
 class OneRow extends Component {
 
     render(){

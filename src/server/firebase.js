@@ -1,3 +1,6 @@
+
+/*Opérations de connextion à la base de donnée firebase*/
+
 import * as firebase from 'firebase';
 
 const app = firebase.initializeApp({
