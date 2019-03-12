@@ -43,12 +43,12 @@ class App extends Component {
     return (
       <div className="App">
         {this.state.isSignedIn
-          {/*Si l'utilsiateur est connécté, on affiche la page principale contenant le cours du bitcoin*/}
+          /*Si l'utilsiateur est connécté, on affiche la page principale contenant le cours du bitcoin*/
           ?<CoursBitCoinPage
            signOut={this.sign_out}
           currentUser={"Bienvenue "+ auth.currentUser.displayName}
           />
-         {/*Sinon on affiche la page de connexion au compte google*/}
+         /*Sinon on affiche la page de connexion au compte google*/
           :<SignIn signIn={this.sign_in}
            currentUser="Connectez Vous !"
            />
