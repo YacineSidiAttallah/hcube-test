@@ -15,12 +15,11 @@ class CoursBitCoinPage extends Component {
         <div style={customStyle}>
           <Grid.Row>
               <Grid.Col>
-                    <MonTableauBitCoin />
+                    <MonTableauBitCoin signOut={this.props.signOut}/>
               </Grid.Col>
           </Grid.Row>
           <Grid.Row >
               <Grid.Col>
-                    <Button color="danger" onClick={this.props.signOut} >Sign Out !</Button>
               </Grid.Col>
           </Grid.Row>
         </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Card, Table} from 'tabler-react';
+import {Card, Table, Button} from 'tabler-react';
 import "tabler-react/dist/Tabler.css";
 import OneRow from './OneRow'
 
@@ -60,6 +60,7 @@ class MonTableauBitCoin extends Component {
                 {dataMapping}
             </Table.Body>
         </Table>
+        <Button color="danger" onClick={this.props.signOut} >Sign Out !</Button>
 </Card.Body>
   </Card>
     );
