@@ -18,10 +18,6 @@ class CoursBitCoinPage extends Component {
                     <MonTableauBitCoin signOut={this.props.signOut}/>
               </Grid.Col>
           </Grid.Row>
-          <Grid.Row >
-              <Grid.Col>
-              </Grid.Col>
-          </Grid.Row>
         </div>
       </div>
     );
